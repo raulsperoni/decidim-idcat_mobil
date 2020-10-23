@@ -1,7 +1,7 @@
 # frozen-string_literal: true
 
 module Decidim
-  module IdcatMobil
+  module IdUruguay
     class VerificationSuccessNotification < Decidim::Events::SimpleEvent
       def resource_path
         'http'

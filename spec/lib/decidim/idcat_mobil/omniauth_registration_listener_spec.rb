@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-module Decidim::IdcatMobil
+module Decidim::IdUruguay
   describe OnOmniauthRegistrationListener do
     describe "when omniauth_registration event is notified" do
 
@@ -12,10 +12,10 @@ module Decidim::IdcatMobil
       end
 
       context "when it is an IdCat mòbil registration" do
-        let(:provider) { 'idcat_mobil' }
+        let(:provider) { 'iduruguay' }
 
         it "enqueues VerificationJob" do
-          expect(Decidim::IdcatMobil::VerificationJob).to receive(:perform_later)
+          expect(Decidim::IdUruguay::VerificationJob).to receive(:perform_later)
                   .with(raw_data)
 
           subject.on_omniauth_registration(raw_data)
@@ -25,7 +25,7 @@ module Decidim::IdcatMobil
       context "when it is not and IdCat mòbil registration" do
         let(:provider) { 'decidim' }
         it "does not enqueues VerificationJob" do
-          expect(Decidim::IdcatMobil::VerificationJob).not_to receive(:perform_later)
+          expect(Decidim::IdUruguay::VerificationJob).not_to receive(:perform_later)
         end
       end
     end

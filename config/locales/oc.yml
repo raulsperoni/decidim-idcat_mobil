@@ -7,7 +7,7 @@ oc:
     verifications:
       idcat_mobil:
         errors:
-          invalid_method: No vos auetz pogut verificar. Eth metòde de verificacion OAuth2 non ère "idcat_mobil" tau coma se demoraue.
+          invalid_method: No vos auetz pogut verificar. Eth metòde de verificacion OAuth2 non ère "iduruguay" tau coma se demoraue.
           invalid_status: No vos auetz pogut verificar. Era verificacion OAuth2 a estat corrècta.
         invalid:
           email_intro: Non s'a pogut concedir era autorizacion de IdCat Mòbil.

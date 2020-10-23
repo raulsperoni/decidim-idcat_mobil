@@ -8,7 +8,7 @@ _IdCat mòbil_ is an identity validator from VÀLid (Validador d'Identitats del 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'decidim-idcat_mobil'
+gem 'decidim-iduruguay'
 ```
 
 And then execute:
@@ -29,7 +29,7 @@ Check how to configure the strategy in [Decidim's related documentation](). The 
   omniauth:
     idcat_mobil:
       enabled: true
-      icon_path: decidim/idcat_mobil/icon.svg
+      icon_path: decidim/iduruguay/icon.svg
 ```
 
 Omniauth's configuration is setted in `config/initializers/omniauth_idcat_mobil.rb`. Nothing has to be modified there but it expects `IDCAT_MOBIL_CLIENT_ID`, `IDCAT_MOBIL_CLIENT_SECRET` and `IDCAT_MOBIL_SITE_URL` environment variables to be setted.

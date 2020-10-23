@@ -1,22 +1,22 @@
 # # frozen_string_literal: true
 
 # module Decidim
-#   module IdcatMobil
-#     # This is the engine that runs on the public interface of `IdcatMobil`.
+#   module IdUruguay
+#     # This is the engine that runs on the public interface of `IdUruguay`.
 #     class AdminEngine < ::Rails::Engine
-#       isolate_namespace Decidim::IdcatMobil::Admin
+#       isolate_namespace Decidim::IdUruguay::Admin
 
 #       paths["db/migrate"] = nil
 #       paths["lib/tasks"] = nil
 
 #       routes do
 #         # Add admin engine routes here
-#         # resources :idcat_mobil do
+#         # resources :iduruguay do
 #         #   collection do
 #         #     resources :exports, only: [:create]
 #         #   end
 #         # end
-#         # root to: "idcat_mobil#index"
+#         # root to: "iduruguay#index"
 #       end
 
 #       def load_seed

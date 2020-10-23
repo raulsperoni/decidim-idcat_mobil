@@ -2,10 +2,10 @@
 
 require "spec_helper"
 
-describe Decidim::IdcatMobil::VerificationInvalidNotification do
+describe Decidim::IdUruguay::VerificationInvalidNotification do
   let(:resource) { create(:user) }
 
-  let(:event_name) { "decidim.verifications.idcat_mobil.invalid" }
+  let(:event_name) { "decidim.verifications.iduruguay.invalid" }
 
   include_context "when a simple event"
   it_behaves_like "a simple event", skip_space_checks: true

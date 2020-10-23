@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Decidim
-  module IdcatMobil
+  module IdUruguay
     class VerificationJob < ApplicationJob
       queue_as :default
 
@@ -24,13 +24,13 @@ module Decidim
 
       # Retrieves handler from Verification workflows registry.
       def retrieve_handler(oauth_data)
-        Decidim::AuthorizationHandler.handler_for('idcat_mobil', oauth_data: oauth_data)
+        Decidim::AuthorizationHandler.handler_for('iduruguay', oauth_data: oauth_data)
       end
 
       def notify_user(user, status, handler)
-        notification_class= status == :ok ? Decidim::IdcatMobil::VerificationSuccessNotification : Decidim::IdcatMobil::VerificationInvalidNotification
+        notification_class= status == :ok ? Decidim::IdUruguay::VerificationSuccessNotification : Decidim::IdUruguay::VerificationInvalidNotification
         Decidim::EventsManager.publish(
-          event: "decidim.verifications.idcat_mobil.#{status}",
+          event: "decidim.verifications.iduruguay.#{status}",
           event_class: notification_class,
           # resource: result,
           recipient_ids: [user.id],

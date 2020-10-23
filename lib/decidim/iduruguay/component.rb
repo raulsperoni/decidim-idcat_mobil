@@ -2,10 +2,10 @@
 
 # require_dependency "decidim/components/namer"
 
-# Decidim.register_component(:idcat_mobil) do |component|
-#   component.engine = Decidim::IdcatMobil::Engine
-#   component.admin_engine = Decidim::IdcatMobil::AdminEngine
-#   component.icon = "decidim/idcat_mobil/icon.svg"
+# Decidim.register_component(:iduruguay) do |component|
+#   component.engine = Decidim::IdUruguay::Engine
+#   component.admin_engine = Decidim::IdUruguay::AdminEngine
+#   component.icon = "decidim/iduruguay/icon.svg"
 
 #   # component.on(:before_destroy) do |instance|
 #   #   # Code executed before removing the component
@@ -26,8 +26,8 @@
 
 #   # component.register_resource(:some_resource) do |resource|
 #   #   # Register a optional resource that can be references from other resources.
-#   #   resource.model_class_name = "Decidim::IdcatMobil::SomeResource"
-#   #   resource.template = "decidim/idcat_mobil/some_resources/linked_some_resources"
+#   #   resource.model_class_name = "Decidim::IdUruguay::SomeResource"
+#   #   resource.template = "decidim/iduruguay/some_resources/linked_some_resources"
 #   # end
 
 #   # component.register_stat :some_stat do |context, start_at, end_at|

@@ -7,7 +7,7 @@ es:
     verifications:
       idcat_mobil:
         errors:
-          invalid_method: No se pudo verificar. El método de verificación OAuth2 no fue 'idcat_mobil' como se esperaba.
+          invalid_method: No se pudo verificar. El método de verificación OAuth2 no fue 'iduruguay' como se esperaba.
           invalid_status: No se pudo verificar. La verificación OAuth2 no ha sido correcta.
         invalid:
           email_intro: No ha sido posible otorgarle la autorización IdCat Mòbil.

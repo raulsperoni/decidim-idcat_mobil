@@ -4,7 +4,7 @@ require "spec_helper"
 
 require "decidim/verifications/idcat_mobil_handler"
 
-module Decidim::IdcatMobil
+module Decidim::IdUruguay
   describe VerificationJob do
 
     let!(:user) { create(:user) }
@@ -13,10 +13,10 @@ module Decidim::IdcatMobil
       {
         user_id: user.id,
         identity_id: identity.id,
-        provider: 'idcat_mobil',
-        uid: "idcat_mobil/#{user.id}",
+        provider: 'iduruguay',
+        uid: "iduruguay/#{user.id}",
         email: user.email,
-        name: 'idcat_mobil',
+        name: 'iduruguay',
         nickname: nil,
         avatar_url: nil,
         raw_data: {}
@@ -42,8 +42,8 @@ module Decidim::IdcatMobil
           expect(Decidim::EventsManager)
             .to receive(:publish)
             .with(
-              event: "decidim.verifications.idcat_mobil.ok",
-              event_class: Decidim::IdcatMobil::VerificationSuccessNotification,
+              event: "decidim.verifications.iduruguay.ok",
+              event_class: Decidim::IdUruguay::VerificationSuccessNotification,
               recipient_ids: [user.id],
               extra: {
                 status: :ok,
@@ -61,8 +61,8 @@ module Decidim::IdcatMobil
           expect(Decidim::EventsManager)
             .to receive(:publish)
             .with(
-              event: "decidim.verifications.idcat_mobil.invalid",
-              event_class: Decidim::IdcatMobil::VerificationInvalidNotification,
+              event: "decidim.verifications.iduruguay.invalid",
+              event_class: Decidim::IdUruguay::VerificationInvalidNotification,
               recipient_ids: [user.id],
               extra: {
                 status: :invalid,

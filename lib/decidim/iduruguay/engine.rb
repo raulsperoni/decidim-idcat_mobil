@@ -2,18 +2,18 @@
 
 require "rails"
 require "decidim/core"
-require "omniauth/idcat_mobil"
+require "omniauth/iduruguay"
 
 module Decidim
-  module IdcatMobil
-    # This is the engine that runs on the public interface of idcat_mobil.
+  module IdUruguay
+    # This is the engine that runs on the public interface of iduruguay.
     class Engine < ::Rails::Engine
-      isolate_namespace Decidim::IdcatMobil
+      isolate_namespace Decidim::IdUruguay
 
       routes do
         # Add engine routes here
-        # resources :idcat_mobil
-        # root to: "idcat_mobil#index"
+        # resources :iduruguay
+        # root to: "iduruguay#index"
       end
 
       # #
@@ -29,7 +29,7 @@ module Decidim
       # end
 
       # initializer "decidim_idcat_mobil.assets" do |app|
-      #   app.config.assets.precompile += %w[decidim_idcat_mobil_manifest.js decidim_idcat_mobil_manifest.css]
+      #   app.config.assets.precompile += %w[decidim_iduruguay_manifest.js decidim_idcat_mobil_manifest.css]
       # end
     end
   end

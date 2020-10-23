@@ -3,7 +3,7 @@
 module Decidim
   module Verifications
     # A Handler form object that just holds OAuth2 data provided by AOC when performing "IdCat mòbil" authentication.
-    class IdCatMobilHandler < AuthorizationHandler
+    class IdUruguayHandler < AuthorizationHandler
       attribute :oauth_data, Hash
 
       validates :unique_id, presence: true
